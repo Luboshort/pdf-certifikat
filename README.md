@@ -50,8 +50,9 @@ Ruční kontrola: menu **PDF certifikát › Zkontrolovat aktualizace…**
 2. **Přetáhněte PDF** (nebo celou složku) do okna.
 3. Po kontrole uvidíte výsledek: **Vyhovuje / Vyhovuje s varováním / Nevyhovuje**, seznam nálezů
    a náhled místa nálezu včetně separací a mapy krytí.
-4. Všechny výstupy se uloží do složky **`<název souboru>_certification`** vedle originálu:
-   PDF/X, protokol, certifikát **CZ** a **EN**.
+4. Do složky **`<název souboru>_certification`** vedle originálu se uloží výsledné **PDF/X**
+   a **certifikát** v jazyce aplikace (česky nebo anglicky podle přepínače CZ | EN).
+   Protokol a náhledy jsou k dispozici jen během práce s aplikací.
 
 Jazyk aplikace přepnete vpravo nahoře (**CZ | EN**).
 
