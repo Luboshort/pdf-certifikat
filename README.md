@@ -54,7 +54,7 @@ Ruční kontrola: menu **PDF certifikát › Zkontrolovat aktualizace…**
    a **certifikát** v jazyce aplikace (česky nebo anglicky podle přepínače CZ | EN).
    Protokol a náhledy jsou k dispozici jen během práce s aplikací.
 
-Jazyk aplikace přepnete vpravo nahoře (**CZ | EN**).
+Jazyk aplikace přepnete v horní liště okna vlevo, vedle názvu aplikace (**CZ | EN**).
 
 ## Ověření v Adobe Acrobat Pro (volitelné)
 
@@ -89,6 +89,6 @@ and creates a print inspection certificate in Czech and English.
 2. Unzip it and move **PDF certifikát** to the Applications folder.
 3. In Terminal run once:
    `xattr -dr com.apple.quarantine "/Applications/PDF certifikát.app"`
-4. Open the app. Switch the language to **EN** in the top-right corner.
+4. Open the app. Switch the language to **EN** in the toolbar at the top left, next to the app name.
 
 **Updates** are offered automatically after launch – click **Install and Relaunch**.
