@@ -37,13 +37,13 @@ if [ -z "$SRC" ]; then echo "CHYBA: v balíčku není aplikace."; exit 1; fi
 # běžící aplikaci ukončit, starou verzi nahradit
 osascript -e 'tell application id "cz.pdfcertifikat.app" to quit' >/dev/null 2>&1 || true
 sleep 1
-echo "› Instaluji do $DEST…"
+echo "› Instaluji do ${DEST}…"
 rm -rf "$DEST/$APPNAME"
 ditto "$SRC" "$DEST/$APPNAME"
 xattr -dr com.apple.quarantine "$DEST/$APPNAME" 2>/dev/null || true
 touch "$DEST/$APPNAME"
 
 VER=$(defaults read "$DEST/$APPNAME/Contents/Info" CFBundleShortVersionString 2>/dev/null || echo "?")
-echo "Hotovo: PDF certifikát $VER v $DEST"
+echo "Hotovo: PDF certifikát ${VER} v ${DEST}"
 echo "Další aktualizace aplikace nabídne sama po spuštění."
 open "$DEST/$APPNAME"
