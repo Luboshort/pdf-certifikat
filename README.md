@@ -18,9 +18,9 @@ v Adobe Acrobat Pro a elektronicky podepsaný.
 
 ## Instalace
 
-1. Otevřete [**nejnovější vydání**](https://github.com/Luboshort/pdf-certifikat/releases/latest)
-   a v části **Assets** stáhněte soubor **`PDFCertifikat-<verze>-macOS.zip`**
-   (ne `PDFCertifikat-update-…`, ten slouží jen pro automatické aktualizace).
+1. Stáhněte **[PDFCertifikat-macOS.zip](https://github.com/Luboshort/pdf-certifikat/releases/download/aplikace/PDFCertifikat-macOS.zip)**
+   – vždy nejnovější celá aplikace (asi 160 MB).
+   Soubory `PDFCertifikat-update-…` u jednotlivých verzí nestahujte, slouží jen pro automatické aktualizace.
 2. Dvojklikem soubor rozbalte – vznikne aplikace **PDF certifikát**.
 3. Přetáhněte ji do složky **Aplikace** (Applications).
 4. Otevřete **Terminál** (Aplikace › Utility › Terminál), vložte tento příkaz a stiskněte Enter:
@@ -84,8 +84,8 @@ and creates a print inspection certificate in Czech and English.
 **Requirements:** Apple Silicon Mac, macOS 14 or later; Adobe Acrobat Pro optional.
 
 **Installation:**
-1. Download **`PDFCertifikat-<version>-macOS.zip`** from the
-   [latest release](https://github.com/Luboshort/pdf-certifikat/releases/latest).
+1. Download **[PDFCertifikat-macOS.zip](https://github.com/Luboshort/pdf-certifikat/releases/download/aplikace/PDFCertifikat-macOS.zip)**
+   – always the latest full app.
 2. Unzip it and move **PDF certifikát** to the Applications folder.
 3. In Terminal run once:
    `xattr -dr com.apple.quarantine "/Applications/PDF certifikát.app"`
