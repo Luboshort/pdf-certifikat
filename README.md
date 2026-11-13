@@ -18,20 +18,34 @@ v Adobe Acrobat Pro a elektronicky podepsaný.
 
 ## Instalace
 
+Otevřete **Terminál** (Aplikace › Utility › Terminál), vložte tento příkaz a stiskněte Enter:
+
+```
+curl -fsSL https://raw.githubusercontent.com/Luboshort/pdf-certifikat/main/install.sh | bash
+```
+
+Příkaz stáhne nejnovější celou aplikaci (asi 160 MB), nainstaluje ji a spustí. Instaluje do složky
+**Aplikace**; když do ní nemáte práva (např. firemní počítač), tak do **Aplikací uživatele**
+(`~/Applications`). Stejným příkazem lze aplikaci kdykoli přeinstalovat.
+
+<details>
+<summary>Ruční instalace bez Terminálu (alternativa)</summary>
+
 1. Stáhněte **[PDFCertifikat-macOS.zip](https://github.com/Luboshort/pdf-certifikat/releases/download/aplikace/PDFCertifikat-macOS.zip)**
-   – vždy nejnovější celá aplikace (asi 160 MB).
-   Soubory `PDFCertifikat-update-…` u jednotlivých verzí nestahujte, slouží jen pro automatické aktualizace.
-2. Dvojklikem soubor rozbalte – vznikne aplikace **PDF certifikát**.
-3. Přetáhněte ji do složky **Aplikace** (Applications).
-4. Otevřete **Terminál** (Aplikace › Utility › Terminál), vložte tento příkaz a stiskněte Enter:
+   (soubory `PDFCertifikat-update-…` u jednotlivých verzí nestahujte, slouží jen pro aktualizace).
+2. Rozbalte jej a aplikaci **PDF certifikát** přetáhněte do **Aplikací** nebo **Aplikací uživatele**.
+3. V Terminálu jednou zrušte karanténu – podle toho, kam jste aplikaci dali:
 
    ```
    xattr -dr com.apple.quarantine "/Applications/PDF certifikát.app"
+   xattr -dr com.apple.quarantine ~/Applications/"PDF certifikát.app"
    ```
 
-   Aplikace není podepsaná certifikátem Apple, proto ji macOS bez tohoto kroku nespustí
-   („aplikace je poškozená“ nebo „nelze ověřit vývojáře“). Stačí to udělat jednou.
-5. Spusťte **PDF certifikát** z Aplikací nebo Launchpadu.
+   Aplikace není podepsaná certifikátem Apple; bez tohoto kroku ji macOS nespustí nebo se při prvním
+   spuštění dlouho kontroluje (ikona jen skáče v Docku).
+4. Spusťte **PDF certifikát**.
+
+</details>
 
 > Pokud macOS přesto spuštění zablokuje: **Nastavení systému › Soukromí a zabezpečení**, dole
 > u hlášení o PDF certifikátu klikněte **Přesto otevřít**.
@@ -83,12 +97,13 @@ and creates a print inspection certificate in Czech and English.
 
 **Requirements:** Apple Silicon Mac, macOS 14 or later; Adobe Acrobat Pro optional.
 
-**Installation:**
-1. Download **[PDFCertifikat-macOS.zip](https://github.com/Luboshort/pdf-certifikat/releases/download/aplikace/PDFCertifikat-macOS.zip)**
-   – always the latest full app.
-2. Unzip it and move **PDF certifikát** to the Applications folder.
-3. In Terminal run once:
-   `xattr -dr com.apple.quarantine "/Applications/PDF certifikát.app"`
-4. Open the app. Switch the language to **EN** in the toolbar at the top left, next to the app name.
+**Installation:** open Terminal and run
+
+```
+curl -fsSL https://raw.githubusercontent.com/Luboshort/pdf-certifikat/main/install.sh | bash
+```
+
+It downloads the latest full app, installs it to Applications (or to `~/Applications` if you have
+no rights there) and launches it. Switch the language to **EN** in the toolbar at the top left.
 
 **Updates** are offered automatically after launch – click **Install and Relaunch**.
